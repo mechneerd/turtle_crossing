@@ -9,7 +9,7 @@ class ManageCar(Turtle):
     def __init__(self):
         super().__init__()
         self.random_car = []
-        self.car_speed = 20
+        self.car_speed = 10
 
     def build_car(self):
         car_creation_speed = random.randint(1, 6)
@@ -27,7 +27,7 @@ class ManageCar(Turtle):
             i.backward(self.car_speed)
 
     def increase_car_speed(self):
-        self.car_speed += 10
+        self.car_speed += 5
 
 
 

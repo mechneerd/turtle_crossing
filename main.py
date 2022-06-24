@@ -28,12 +28,13 @@ while game_on:
     # collision with car
     for i in manage_car.random_car:
         if i.distance(bob) < 25:
+            score.game_over()
             game_on = False
     #turle at other end
     if bob.ycor() > 280:
         bob.turtle_bact_to_bottom()
         manage_car.increase_car_speed()
-        score.score_update()
+        score.after_crossing()
 
 
 

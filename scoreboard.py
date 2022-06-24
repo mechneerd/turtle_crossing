@@ -19,3 +19,9 @@ class Scoreboard(Turtle):
     def after_crossing(self):
         self.level += 1
         self.score_update()
+
+    def game_over(self):
+        self.goto(0, 0)
+        self.write('GAME OVER')
+
+
