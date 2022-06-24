@@ -1,18 +1,19 @@
 from turtle import Turtle
 
 
-class Cross(Turtle):
+class CrossTurtle(Turtle):
 
     def __init__(self):
         super().__init__()
-        self.color('black')
-        self.setheading(90)
-        self.penup()
-        self.speed('fastest')
         self.shape('turtle')
-        self.shapesize(1, 1)
+        self.setheading(90)
+        self.color('white')
+        self.penup()
         self.goto(0, -280)
 
     def mv(self):
-        new_y = self.ycor() + 20
-        self.goto(self.xcor(), new_y)
+        self.fd(20)
+
+    def turtle_bact_to_bottom(self):
+        self.goto(0, -280)
+
